@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+body {
+  min-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(44, 44, 44);
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+  /* transition: all 0.25s linear 0s; */
+}
+
+h1 {
+  color: #ee5a24;
+  position: relative;
+  top: 50px;
+}
+
+body {
+  margin: 0;
+}
+
+.counterContainer {
+  transform: translate(-0%, 700%);
+  color: rgb(255, 111, 0);
+  font-weight: bold;
+}
+
+.keyboardContainer {
+  position: relative;
+  top: 100px;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.active {
+  color: rgb(255, 111, 0);
+  background-color: rgb(66, 66, 66);
+  border-color: rgb(255, 111, 0);
+  box-shadow: 0px 0px 3px 0px rgba(238, 90, 36, 0.75);
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+  min-width: 20px;
+  min-height: 20px;
+  max-width: 30px;
+  max-height: 30px;
+  height: 5vw;
+  width: 5vw;
+  border-radius: 0.7em;
+  line-height: 3px;
+  letter-spacing: 1px;
+  margin: 0.4em;
+  text-align: center;
+  font-size: 1vw;
+  background-color: rgb(27, 27, 27);
+  border: 1.5px solid rgb(112, 109, 109);
+  color: rgb(250, 250, 250);
+  font-weight: bold;
+}
+
+.row-4 {
+  display: flex;
+}
+
+.row-4 button {
+  flex-grow: 1;
+  min-width: 200px;
+}
+
+#restartBtn {
+  outline: none;
+  width: 50px;
+  font-size: 1.5vw;
+  position: relative;
+  top: 150px;
+  font-weight: bold;
+  background-color: transparent;
+  border: transparent;
+  color: rgb(255, 111, 0);
+  cursor: pointer;
+  margin: 0.4em;
+  text-align: right;
+  padding-right: 5vw;
+}
+
+#restartBtn:hover {
+  outline: none;
+  color: white;
+  border-radius: 10px;
+}
+
+blurred {
+  transition: all 0.5s linear 0s;
+  filter: blur(1px);
+}
+
+html:hover blurred {
+  transition: all 0.5s linear 0s;
+  filter: blur();
+}
