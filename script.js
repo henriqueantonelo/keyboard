@@ -10,8 +10,6 @@ Print = function (button) {
 
   let letter = button.textContent.trim();
   clicks.push(letter);
-  console.log(clicks);
-  console.log(letter);
 };
 document.onkeydown = function (e) {
   e = e || window.event;
