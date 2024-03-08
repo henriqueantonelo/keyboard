@@ -16,38 +16,28 @@ Print = function (button) {
 document.onkeydown = function (e) {
   e = e || window.event;
   var key = e.which || e.keyCode;
-
   if (key === 32) {
     Print(document.getElementById("space"));
-  }
-  if (key === 219) {
+  } else if (key === 219) {
     Print(document.getElementById("["));
-  }
-  if (key === 221) {
+  } else if (key === 221) {
     Print(document.getElementById("]"));
-  }
-  if (key === 186) {
+  } else if (key === 186) {
     Print(document.getElementById(";"));
-  }
-  if (key === 222) {
+  } else if (key === 222) {
     Print(document.getElementById("'"));
-  }
-  if (key === 188) {
+  } else if (key === 188) {
     Print(document.getElementById(","));
-  }
-  if (key === 190) {
+  } else if (key === 190) {
     Print(document.getElementById("."));
-  }
-  if (key === 191) {
+  } else if (key === 191) {
     Print(document.getElementById("/"));
   } else if (65 >= key <= 90) {
     var pressedKey = String.fromCharCode(key);
     document.getElementById(pressedKey).click();
   }
-
   var value = parseInt(counter.innerHTML);
   value++;
-
   counter.innerHTML = value;
 };
 
@@ -58,4 +48,3 @@ const init = function () {
 restartBtn.addEventListener("click", function () {
   init();
 });
-hhfhfhfhfhhhhhhfhhh;
